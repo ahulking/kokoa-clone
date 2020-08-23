@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/90b8326876.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chat: Kakao Clone</title>
+  </head>
+  <body class="chats-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>15:14</span>
+        </div>
+        <div class="status-bar__column">
+          <span>75%</span>
+          <i class="fas fa-battery-full"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <div class="header__back-btn">
+            <a href="main.html"> <i class="fas fa-arrow-left fa-2x"></i></a>
+          </div>
+          <h1 class="header__title">Chat</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon"><i class="fas fa-search"></i> </span>
+          <span class="header__icon"><i class="fas fa-bars"></i> </span>
+        </div>
+      </header>
+    </div>
+
+    <main class="chat-screen">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">Friday, Jan 11</span>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="m-avatar" />
+          <span class="message__content">
+            <div class="message__bubble">Where are U?</div>
+            <span class="message__author">Chivary</span>
+          </span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__content">
+            <div class="message__bubble">Sasang</div>
+          </span>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="m-avatar" />
+          <span class="message__content">
+            <div class="message__bubble">OK. see U</div>
+            <span class="message__author">Chivary</span>
+          </span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__content">
+            <div class="message__bubble">ye~</div>
+          </span>
+        </li>
+      </ul>
+    </main>
+    <div class="chat__write-container">
+      <input
+        class="chat__write"
+        type="text"
+        placeholder="Send message"
+        class="chat__write-input"
+      />
+      <div class="chat__icon-left chat__icon">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon"> <i class="far fa-smile-wink"></i> </span
+        ><span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+  </body>
+</html>
